@@ -8,17 +8,20 @@ _2-D Gait Analysis for clinical use._
 
 - [Overview](#overview)
 - [Features](#features)
-- [Technology](#technology)
+- [Requirements](#requirements)
+- [Technology Stack](#technology-stack)
 - [Installation](#installation)
+- [PC Development Environment Setup](#pc-development-environment-setup)
+- [Deployment Artifacts](#deployment-artifacts)
 - [Usage](#usage)
-- [Contact](#contact)
-- [References](#References)
-
+- [Dataset & Validation](#dataset--validation)
+- [References](#references)
+- [Acknowledgments](#acknowledgments)
 ---
 
 ## Overview
 
-GaitVision in an android application focused on solving the problem of lower technology access for gait analysis in developing parts of the world. Using a minimum amount of hardware only requiring:
+GaitVision is an Android application focused on solving the problem of lower technology access for gait analysis in developing parts of the world. It requires minimal hardware:
 1. Android phone
 2. GaitVision Software
 3. Camera access OR stored videos
@@ -27,15 +30,15 @@ GaitVision in an android application focused on solving the problem of lower tec
 
 ## Features
 
-- [Record Videos in App]
-- [Alter Input video to show angles at timepoint]
-- [Show gait score estimate from autoencoder]
-- [Show graph of angles for analysis]
-- [Store CSV of angles on local machine for later use]
+- Record videos in app
+- Annotate input video with joint angles at each timepoint
+- Generate gait score estimate using autoencoder
+- Display graphs of joint angles for analysis
+- Store CSV data locally for later use
 
 ---
 
-## Technology
+## Technology Stack
 
 - **Language:** Kotlin / Java
 - **UI Framework:** Android XML
@@ -48,7 +51,7 @@ GaitVision in an android application focused on solving the problem of lower tec
 
 ### Steps
 
-1. Transfer .apk file to android compatible device
+1. Transfer the .apk file to Android compatible device
 2. Open .apk file in filemanager
 3. Click install and allow all
 
@@ -77,27 +80,25 @@ GaitVision in an android application focused on solving the problem of lower tec
 
 The following artifacts should be included for deployment:
 
-- Android APK file
-- Source code repository, GitHub
-- Autoencoder (AE) model files
-- PCA model files
-- Linear regression scoring model
-- Sample test videos
-- Installation and setup instructions
+- Android APK file  
+- Autoencoder (AE) model files  
+- PCA model files  
+- Linear regression scoring model  
+- Sample test videos  
 
 ---
 
 ## Usage
 
-- Launch the app.
-- Input Unique Participant ID.
-- Input participant height in the form FEET INCHES
-- Click Record video or Select video
-- Have participant walk as they normally would for minimum 2 gait cycles ( roughly 5 seconds )
-- Click Perform Analysis
-- View Video then click View Analysis
-- Select graphs as needed
-- Export CSV or return to main menu
+1. Launch the app  
+2. Enter a unique participant ID  
+3. Enter participant height (feet and inches)  
+4. Record a video or select an existing video  
+5. Have the participant walk normally for at least 2 gait cycles (~5 seconds)  
+6. Click "Perform Analysis"  
+7. View the processed video and analysis results  
+8. Select graphs as needed  
+9. Export CSV data or return to the main menu  
 
 ---
 
@@ -108,10 +109,11 @@ contact for clarification at nathaniel.schimpf@gmail.com
 ---
 
 ## References
--[MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) by Phil Jay (Apache 2.0 License)
+- [MPAndroidChart](https://github.com/PhilJay/MPAndroidChart) by Phil Jay (Apache 2.0 License)
 
-Special thanks to:
-Guna Sindhuja Siripurapu 
-Dr. Rita Patterson
-Dr. Mark Albert
-University of North Texas
+## Acknowledgments
+
+- Guna Sindhuja Siripurapu
+- Dr. Rita Patterson
+- Dr. Mark Albert
+- University of North Texas
